@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Saira+Condensed:wght@400;600;700&display=swap');
+/* font-family: 'Alata', sans-serif;
+font-family: 'Saira Condensed', sans-serif; */
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Alata', sans-serif;
+}
+
+/* swiper  */
+
+.slider_content_text{
+    /* background-color: #ffffff; */
+    color: #ffffff;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    z-index: 2;
+    padding: 10px;
+    max-width: 900px;
+    width: 100%;
+}
+.slider_btn:hover{
+    background-color: #EC7427;
+    color:white;
+}
+.slide1{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(./image/night-city-osvitchene-neon-.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(./image/facade-of-a-precast-apartment-building.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide3{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)),url(./image/hamburg-city-in-germany.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.swiper {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+/* swiper  */
+nav{
+    background: rgba(0,0,0,0.0);
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    z-index: 999;
+}
+.ul_class li a{
+    font-weight: 400;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+ }  
+ .ul_class li a.active,
+ .ul_class li a:hover{
+    color: #EC7427;
+ }
+
+ 
+.ul_class{
+    display: flex;
+    gap: 30px;
+}
+.ul_class li a{
+    position: relative;
+}
+.ul_class li a::after{
+   content: '';
+   position: absolute;
+   top: 27px;
+   left: 0;
+   width: 100%;
+   transform: scale(0);
+   height: 3px;
+   background-color: #D1631C;
+   transition: 0.5s ease-in-out;
+}
+.ul_class li a:hover::after{
+    width: 100%;
+    transform: scale(1);
+}
+.ul_class li a.active::after,
+.ul_class li a:hover::after{
+    width: 100%;
+    transform: scale(1);
+}
+.hambar{
+    height: 50px;
+    width: 50px;
+    /* background-color: #ffffff; */
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+.hambar span{
+    transition: 0.4s ease-in-out;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    display: block;
+    height: 5px;
+    width: 27px;
+    background-color:#D1631C;
+}
+.hambar span:nth-child(1){
+    transform: translateY(-10px);
+}
+.hambar span:nth-child(3){
+    transform: translateY(10px);
+}
+.baar span:nth-child(1){
+    transform: rotate(45deg);
+}
+.baar span:nth-child(2){
+    transform:translateX(60px);
+}
+.baar span:nth-child(3){
+    transform: rotate(315deg);
+}
+/* ....................................card_wrapper */
+.card_wrapper{
+    transform: translateY(-60px);
+    position: relative;
+    z-index: 3;
+}
+
+/* card_bg */
+.card{
+    /* background-image: url(./image/bg-Pattern.jpg); */
+    background-image:linear-gradient(rgba(245, 240, 240, 0.847), rgba(255, 252, 252, 0.874)), url(./image/bg-Pattern.jpg);
+}
+.card_slider{
+    height: auto;
+    max-width:500px ;
+    width: 100%;
+}
+
+.testimonials{
+    background-image: url(./image/roof.jpg);
+    background-attachment: fixed;
+}
+/* --------------------Recent Project----------------------- */
+
+.image_footer_:hover .footer_img_text{
+    background-color: initial !important;
+}
+.image_footer_ .footer_img_text h3{
+    transition: 0.7s ease-in-out;
+}
+.image_footer_ .footer_img_text h5{
+    transition: 0.7s ease-in-out;
+}
+.image_footer_:hover .footer_img_text h3 {
+    font-size: 30px;
+    opacity: 0 ;
+}
+.image_footer_:hover .footer_img_text h5 {
+  font-size: 30px;
+  opacity: 0 ;
+}
+.footer_img_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.4) ;
+    transition: 0.7s ease-in-out;
+    border-radius: 8px;
+}
+/* ------------------------Contact_us------------------------------------ */
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #D1631C;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.contact-info {
+    flex: 1;
+    /* padding: 1rem; */
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    text-align: center;
+}
+
+/* ------------------------Contact_us------------------------------------ */
+
+/* -----------------------------------------Footer----------------------------------- */
+.footer_image{
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),url(./image/night-city-osvitchene-neon-.jpg);
+    height: 60vh;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)),url(./image/footer_img.jpg);
+    background-position: top center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed    ;
+    
+}
+    
+
+
+/* media query */
+@media screen and (max-width: 855px){
+    .slider_content_text{
+        left: 0px;
+    }
+}
+@media screen and (max-width: 824px) {
+    .ul_class{
+        display: inline-block;
+        background-color: #D1631C;
+        position: absolute;
+        top: 110px;
+        width: 100%;
+        height: 0 ;
+        opacity: 0;
+        overflow: hidden;
+        padding: 20px;
+        left:0;
+        transition: 0.5s ease-in-out;
+        z-index: 1;
+        
+    }
+    .ul_class li{
+        margin-top: 20px;
+    }
+    .hambar{
+        display: block;
+    }
+    .nav_list{
+        height: 100vh;
+        opacity: 1;
+    }
+    .card_wrapper{
+        transform: translateY(0px);
+        padding: 10px 0;
+        
+    }
+  }
+  @media screen and (max-width: 475px){
+    .slider_content_text{
+        top: 32%;
+        left: 5px;
+    }
+   
+  }
+
